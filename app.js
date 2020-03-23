@@ -34,7 +34,7 @@ io.sockets.on('connection', function(socket){
 
 })
 
-server.listen(3000)
+server.listen(8080)
 
 app.get('/', function(req, res){
     fs.readFile('./static/index.html', function(err, data){
