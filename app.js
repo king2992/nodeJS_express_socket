@@ -33,8 +33,8 @@ io.sockets.on('connection', function(socket){
     })
 
 })
-
-server.listen(8080)
+var port = process.env.PORT || 3000;
+server.listen(port)
 
 app.get('/', function(req, res){
     fs.readFile('./static/index.html', function(err, data){
